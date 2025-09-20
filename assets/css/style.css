@@ -138,3 +138,19 @@ a{color:var(--primary);text-decoration:none}
 .ref-empty{display:none;text-align:center;color:var(--muted);margin:1rem 0}
 
 .logo{height:40px;width:auto;display:block}
+
+.cards__block{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+  gap:1rem;
+  align-items:center;
+  justify-items:center;
+}
+.client-logo{
+  max-width:120px;
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  display:block;
+}
+
