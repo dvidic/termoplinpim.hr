@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <title>Kontakt — TERMOPLIN PIM d.o.o.</title>
+  <meta name="description" content="Kontakt podaci i obrazac za upit." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="TERMOPLIN PIM d.o.o.">
+      <img src="assets/img/logo.png" alt="TERMOPLIN PIM d.o.o. logo" class="logo">
+    </a>
+        <span class="brand-text">TERMOPLIN PIM d.o.o.</span>
+      </a>
+      <button class="nav-toggle" aria-label="Otvori izbornik" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="navMenu">
+        <a href="o-nama.html">O nama</a>
+        <a href="usluge.html">Usluge</a>
+        <a href="reference.html">Reference</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="kontakt.html" class="btn btn-primary">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section contact">
+    <div class="container grid-2">
+      <div>
+        <h1>Kontakt</h1>
+        <p><strong>Uprava – Tehnička priprema gradilišta – Servis</strong></p>
+        <p>Ulica hrvatskog proljeća 6, 43000 Bjelovar</p>
+        <p><a href="tel:+38543245061">+385 43 245 061</a><br>
+        <a href="mailto:termoplinpim@gmail.com">termoplinpim@gmail.com</a></p>
+        <div class="map-embed">
+          <iframe title="Lokacija — Ulica hrvatskog proljeća 6, Bjelovar"
+            src="https://www.google.com/maps?q=Ulica%20hrvatskog%20prolje%C4%87a%206,%20Bjelovar&output=embed" loading="lazy"></iframe>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <label>Ime i prezime
+          <input type="text" name="name" required placeholder="Vaše ime" />
+        </label>
+        <label>E-pošta
+          <input type="email" name="email" required placeholder="ime@domena.hr" />
+        </label>
+        <label>Poruka
+          <textarea name="message" rows="5" required placeholder="Kako vam možemo pomoći?"></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Pošalji</button>
+          <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand small">
+          <span class="brand-logo" aria-hidden="true">
+    <img src="assets/img/logo.png" alt="TERMOPLIN PIM d.o.o. logo" class="logo">
+  </span>
+          <span class="brand-text">TERMOPLIN PIM d.o.o.</span>
+        </div>
+        <p>© <span id="year"></span> Sva prava pridržana. Dizajn i izrada: Dario Vidić</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="o-nama.html">O nama</a>
+        <a href="usluge.html">Usluge</a>
+        <a href="reference.html">Reference</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
