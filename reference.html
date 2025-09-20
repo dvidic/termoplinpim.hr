@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-  <title>Reference — TERMOPLIN PIM d.o.o.</title>
-  <meta name="description" content="Primjeri završenih projekata i klijenata." />
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="dark light">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css" />
-
+  <meta charset="utf-8">
+  <title>Referentna lista — TERMOPLIN PIM d.o.o.</title>
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header class="site-header">
@@ -28,66 +21,149 @@
       <nav class="nav" id="navMenu">
         <a href="o-nama.html">O nama</a>
         <a href="usluge.html">Usluge</a>
-        <a href="reference.html">Reference</a>
+        <a href="montaza.html">Montaža</a>
+        <a href="servis.html">Servis</a>
+        <a href="dizalice-topline.html">Dizalice topline</a>
         <a href="galerija.html">Galerija</a>
         <a href="kontakt.html" class="btn btn-primary">Kontakt</a>
       </nav>
     </div>
   </header>
 
-  <section class="section">
-    <div class="container">
-      <h1>Reference (izbor)</h1>
-      <div class="ref-list">
-        <details open>
-          <summary>2017</summary>
-          <ul>
-            <li>DETAS ADRIA d.o.o. Lipik — Poslovna zgrada u Pakracu</li>
-            <li>Ljekarna Bjelovar — instalacije plina i grijanja</li>
-            <li>Petrokemija d.d. — rekonstrukcija grijanja</li>
-            <li>HGK Bjelovar — strojarski i elektro radovi</li>
-          </ul>
-        </details>
-        <details>
-          <summary>2018</summary>
-          <ul>
-            <li>HEP ODS — oprema za pripremu PTV</li>
-            <li>SELK d.d. — cjevovodi grijanja/hlađenja, ventilokonvektori</li>
-            <li>Adria Snack — HVAC, vodovod i kanalizacija</li>
-          </ul>
-        </details>
-        <details>
-          <summary>2019 – 2021</summary>
-          <ul>
-            <li>Hotel Central Bjelovar — HVAC i ventilokonvektori</li>
-            <li>Glazbena škola V. Lisinski — strojarski i vodovodni radovi</li>
-            <li>Stadion Bjelovar — strojarski i vodovodni radovi</li>
-            <li>Thalassotherapia Crikvenica — podstanice i energetska učinkovitost</li>
-          </ul>
-        </details>
-      </div>
+<main class="section">
+  <div class="container">
+    <h1>Referentna lista izvedenih radova</h1>
+    <div class="ref-search-wrap">
+      <input id="refSearch" class="ref-search" type="search" placeholder="Pretraži reference (npr. HEP, vrtić, 2019)…" />
     </div>
-  </section>
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="brand small">
-          <span class="brand-logo" aria-hidden="true">
-    <img src="assets/img/logo.png" alt="TERMOPLIN PIM d.o.o. logo" class="logo">
-  </span>
-          <span class="brand-text">TERMOPLIN PIM d.o.o.</span>
-        </div>
-        <p>© <span id="year"></span> Sva prava pridržana. Dizajn i izrada: Dario Vidić</p>
-      </div>
-      <nav class="footer-nav">
-        <a href="o-nama.html">O nama</a>
-        <a href="usluge.html">Usluge</a>
-        <a href="reference.html">Reference</a>
-        <a href="kontakt.html">Kontakt</a>
-      </nav>
-    </div>
-  </footer>
-  <script src="assets/js/main.js"></script>
+    <p id="emptyMsg" class="ref-empty">Nema rezultata.</p>
 
+<section class="ref-category"><h2>Industrija i proizvodnja</h2>
+<details class="ref-year" data-year="2017"><summary>2017</summary><ul>
+<li class="ref-item">DETAS ADRIA d.o.o. Lipik — Poslovna zgrada u Pakracu – izvođenje strojarskih instalacija i oborinske kanalizacije</li>
+<li class="ref-item">Petrokemija d.d. Kutina — zgrada kontrole kvalitete i IT prostori – rekonstrukcija grijanja</li>
+<li class="ref-item">Tehnokom d.o.o. Zagreb — HGK Bjelovar – strojarski i elektro radovi</li>
+</ul></details>
+<details class="ref-year" data-year="2018"><summary>2018</summary><ul>
+<li class="ref-item">HEP ODS d.o.o., Elektra Bjelovar — isporuka i ugradnja opreme za pripremu PTV</li>
+<li class="ref-item">SELK d.d. Kutina — cjevovodi grijanja i hlađenja, montaža ventilokonvektora, klimatizacijske cijevi</li>
+<li class="ref-item">ZTB Gradnja d.o.o. Varaždin — Adria Snack, Hercegovac – instalacije grijanja, ventilacije, klimatizacije, vodovoda i kanalizacije</li>
+<li class="ref-item">Paramont d.o.o. Zagreb — Vega A.T.S. Novigrad (Istra) – strojarski radovi, unutarnje instalacije vodovoda i kanalizacije</li>
+</ul></details>
+<details class="ref-year" data-year="2019"><summary>2019</summary><ul>
+<li class="ref-item">Parketi Sabljo d.o.o., Bjelovar — PJ za sušenje drvene građe – strojarski radovi i isporuka opreme</li>
+<li class="ref-item">Mozaik d.o.o., Bjelovar — PJ za sušenje drvene građe – strojarski radovi, toplinska podstanica</li>
+<li class="ref-item">Majstor kuhar Njam Njam d.o.o., Zagreb — Majstor kuhar akademija – strojarske instalacije</li>
+<li class="ref-item">Filabeton d.o.o., Križevci — Dječji vrtić Pčelica, Čazma – vodovod i kanalizacija, strojarski radovi</li>
+<li class="ref-item">Moslavka d.o.o., Bjelovar — Hotel Central Bjelovar – strojarski radovi, ventilokonvektori</li>
+<li class="ref-item">Bistra d.o.o., Đurđevac — Dječji vrtić Veliko Trojstvo – strojarski radovi</li>
+<li class="ref-item">Bistra d.o.o., Đurđevac — Dječji vrtić Tratinčica – strojarski radovi</li>
+<li class="ref-item">Promont Commerce d.o.o., Daruvar — Proizvodna hala Suvenir Arbor, Sirač – toplovodno grijanje</li>
+<li class="ref-item">Parketi d.o.o., Bjelovar — skladišno‑proizvodna hala – instalacija sustava odsisa</li>
+<li class="ref-item">Bistra d.o.o., Đurđevac — Poslovna zgrada u Đurđevcu – strojarski radovi</li>
+<li class="ref-item">Hotel Lišanj d.d., Zagreb — Depandansa Horizont hotela Lišanj – grijanje, hlađenje i bazenska tehnika</li>
+</ul></details>
+<details class="ref-year" data-year="2020"><summary>2020</summary><ul>
+<li class="ref-item">Filabeton d.o.o., Križevci — MIC Priroda Čazma – strojarske instalacije i ugradnja sanitarne opreme</li>
+<li class="ref-item">Promont Commerce d.o.o., Daruvar — Policijska postaja Grubišno Polje – strojarske instalacije</li>
+<li class="ref-item">Demaring d.o.o., Bjelovar — Područna škola Kraljevac – strojarske instalacije, vodovod i kanalizacija</li>
+<li class="ref-item">Demaring d.o.o., Bjelovar — Vatrogasni dom Šandrovac – strojarske instalacije, vodovod i kanalizacija</li>
+<li class="ref-item">Begeom Inženjering d.o.o., Hercegovac — proizvodnja pekarskih proizvoda – instalacije vodovoda i kanalizacije</li>
+<li class="ref-item">Thalassotherapia d.o.o., Crikvenica — Ružmarinka – rekonstrukcija toplinske podstanice</li>
+<li class="ref-item">Hidroregulacija d.d., Bjelovar — Kulturni centar Berek – strojarske instalacije, vodovod i kanalizacija</li>
+<li class="ref-item">Bistra d.o.o., Đurđevac — Školsko‑sportska dvorana OŠ I. L. Croata Kalinovac (II. faza) – strojarski radovi</li>
+<li class="ref-item">Bistra d.o.o., Đurđevac — Školsko‑sportska dvorana OŠ I. L. Croata Kalinovac (II. faza) – vodovod i kanalizacija</li>
+<li class="ref-item">Thalassotherapia d.o.o., Crikvenica — objekt H – I. faza energetske učinkovitosti sustava grijanja, PTV i bazenske vode – strojarske i elektroinstalacije</li>
+<li class="ref-item">Chef d.o.o., Koprivnica — zgrada Legrađanka – plinska instalacija, toplinska podstanica, podno grijanje, solar PTV, ventilacija, klimatizacija, sanitarije i kanalizacija</li>
+<li class="ref-item">Kronospan CRO d.o.o. — upravna zgrada i proizvodne hale – strojarske instalacije</li>
+</ul></details>
+<details class="ref-year" data-year="2021"><summary>2021</summary><ul>
+<li class="ref-item">Hidroregulacija d.d., Bjelovar — Glazbena škola Vatroslava Lisinskog – strojarski radovi, vodovod i hidrantska mreža</li>
+<li class="ref-item">Hidroregulacija d.d., Bjelovar — Nogometni stadion Bjelovar (faza I) – strojarski i vodovodni radovi</li>
+<li class="ref-item">Demaring d.o.o., Bjelovar — Sportska dvorana OŠ Velika Pisanica – strojarske instalacije, vodovod i kanalizacija</li>
+<li class="ref-item">Glovia d.o.o., Zagreb — Trgovački centar Bjelovar (Bipa i Pepco) – unutarnja hidrantska i vodovodna mreža</li>
+<li class="ref-item">Filabeton d.o.o., Križevci — Dogradnja Dječjeg vrtića Križevci (II. faza) – strojarske instalacije, vodovod i kanalizacija</li>
+<li class="ref-item">Ćurić Anamarija, Bjelovar — stambeni objekt – strojarske instalacije, vodovod i odvodnja</li>
+<li class="ref-item">NK Mladost Bjelovar — klupske prostorije i tribine Ždralovi – plinske i strojarske instalacije, radijatorsko grijanje, PTV, vodovod i kanalizacija</li>
+<li class="ref-item">Radnik d.d., Križevci — poslovna zgrada HEP – strojarske instalacije</li>
+</ul></details>
+</section>
+<section class="ref-category"><h2>Javni objekti i ustanove</h2>
+<details class="ref-year" data-year="2017"><summary>2017</summary><ul>
+<li class="ref-item">Zdravstvena ustanova Ljekarna Bjelovar — Ljekarna 1 – instalacije plina, centralnog grijanja i građevinsko‑obrtnički radovi</li>
+</ul></details>
+<details class="ref-year" data-year="2018"><summary>2018</summary><ul>
+<li class="ref-item">Promont‑Commerce, Daruvar — Glazbena škola B.B. Daruvar – strojarske instalacije</li>
+</ul></details>
+<details class="ref-year" data-year="2021"><summary>2021</summary><ul>
+<li class="ref-item">Medicinska škola Bjelovar — zgrada škole – zamjena opreme kotlovnice i toplinskih podstanica</li>
+<li class="ref-item">Osnovna škola Čazma — toplovod škole – demontaža i zamjena cijevi toplovoda</li>
+</ul></details>
+</section>
+<section class="ref-category"><h2>Hoteli i turistički objekti</h2>
+<details class="ref-year" data-year="2021"><summary>2021</summary><ul>
+<li class="ref-item">Navojec Rajka, Bjelovar — stambena zgrada – strojarske instalacije, vodovod, kanalizacija, bazenska tehnika, sanitarna oprema</li>
+<li class="ref-item">Vičević Borivoj, Bjelovar — villa u Istri – obrtnički i strojarski radovi, vodovod i kanalizacija, sanitarna oprema i bazenska tehnika</li>
+</ul></details>
+</section>
+<section class="ref-category"><h2>Poslovne i stambene zgrade</h2>
+<details class="ref-year" data-year="2020"><summary>2020</summary><ul>
+<li class="ref-item">Grad Đurđevac — zgrada Stjepana Radića 6 – ugradnja klimatizacijskih uređaja</li>
+<li class="ref-item">Katić Antonio, Čazma — stambena kuća – instalacije centralnog grijanja</li>
+</ul></details>
+</section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand small">
+        <span class="brand-logo" aria-hidden="true"><img src="assets/img/logo.png" alt="Logo" class="logo"></span>
+        <span class="brand-text">TERMOPLIN PIM d.o.o.</span>
+      </div>
+      <p>© <span id="year"></span> Sva prava pridržana.</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="o-nama.html">O nama</a>
+      <a href="usluge.html">Usluge</a>
+      <a href="reference-lista.html">Reference</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script>
+// Global textual filter with auto-open details
+const input = document.getElementById('refSearch');
+const emptyMsg = document.getElementById('emptyMsg');
+function applyFilter(){
+  const q = (input.value || '').toLowerCase().trim();
+  let anyVisible = false;
+  document.querySelectorAll('.ref-year').forEach(yearBlock => {
+    let yearHas = false;
+    const listItems = yearBlock.querySelectorAll('.ref-item');
+    listItems.forEach(li => {
+      const hit = li.textContent.toLowerCase().includes(q);
+      li.style.display = (q && !hit) ? 'none' : '';
+      if (hit || !q) yearHas = true if (hit) else yearHas;
+    });
+    // auto open years with hits
+    if (q && yearHas) {
+      yearBlock.setAttribute('open','');
+    } else if (!q) {
+      yearBlock.removeAttribute('open');
+    }
+    // hide empty year blocks when filtering
+    yearBlock.style.display = yearHas ? '' : 'none';
+    if (yearHas) anyVisible = true;
+  });
+  emptyMsg.style.display = anyVisible ? 'none' : '';
+}
+if (input){
+  input.addEventListener('input', applyFilter);
+}
+</script>
 </body>
 </html>

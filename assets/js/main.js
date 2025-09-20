@@ -55,3 +55,5 @@ document.querySelectorAll('.gallery[data-folder]').forEach(gallery => {
       console.warn(`No index.json for ${folder}`, err);
     });
 });
+
+// keep main.js present

@@ -122,3 +122,19 @@ a{color:var(--primary);text-decoration:none}
 .logo {height: 40px; width: auto; display: block;}
 
 .brand-logo img.logo {height: 40px; width: auto; display: block;}
+
+/* --- Reference page visual tweaks --- */
+.ref-search-wrap{display:flex;justify-content:center;margin:1rem 0;}
+.ref-search{width:min(800px,100%);padding:.75rem 1rem;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:#0f1630;color:#fff;outline:none}
+.ref-search:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--ring)}
+.ref-category{margin:1.5rem 0}
+.ref-category h2{margin:.3rem 0 0.6rem}
+.ref-year{background:#121931;border:1px solid rgba(255,255,255,.08);border-radius:12px;margin:.5rem 0;overflow:hidden}
+.ref-year > summary{cursor:pointer;padding:.8rem 1rem;font-weight:600;display:flex;align-items:center;gap:.5rem}
+.ref-year > summary::before{content:"▸";display:inline-block;transform:rotate(0deg);transition:transform .2s ease}
+.ref-year[open] > summary::before{transform:rotate(90deg)}
+.ref-year ul{margin:0;padding:.2rem 1.2rem 1rem}
+.ref-year li{margin:.3rem 0;list-style:square inside;color:var(--text)}
+.ref-empty{display:none;text-align:center;color:var(--muted);margin:1rem 0}
+
+.logo{height:40px;width:auto;display:block}
