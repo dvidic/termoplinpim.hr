@@ -119,9 +119,9 @@ a{color:var(--primary);text-decoration:none}
   .gallery{grid-template-columns:1fr 1fr}
 }
 
-.logo {height: 40px; width: auto; display: block;}
+.logo {height: 60px; width: auto; display: block;}
 
-.brand-logo img.logo {height: 40px; width: auto; display: block;}
+.brand-logo img.logo {height: 60px; width: auto; display: block;}
 
 /* --- Reference page visual tweaks --- */
 .ref-search-wrap{display:flex;justify-content:center;margin:1rem 0;}
@@ -137,7 +137,8 @@ a{color:var(--primary);text-decoration:none}
 .ref-year li{margin:.3rem 0;list-style:square inside;color:var(--text)}
 .ref-empty{display:none;text-align:center;color:var(--muted);margin:1rem 0}
 
-.logo{height:40px;width:auto;display:block}
+.logo{height:80px;width:auto;display:block}
+.logo-footer{height:40px;width:auto;display:block}
 
 .cards__block{
   display:grid;
@@ -153,4 +154,38 @@ a{color:var(--primary);text-decoration:none}
   object-fit:contain;
   display:block;
 }
+/* Lightbox */
+.lightbox{
+  position:fixed; inset:0; display:none; z-index:9999;
+  background:rgba(0,0,0,.88); align-items:center; justify-content:center; gap:1rem;
+  padding:2rem;
+}
+.lightbox.open{ display:flex; }
+.lightbox img{
+  max-width:min(92vw, 1200px); max-height:80vh; object-fit:contain; border-radius:10px;
+  border:1px solid rgba(255,255,255,.15); box-shadow:0 10px 40px rgba(0,0,0,.5);
+}
+.lightbox-close,.lightbox-prev,.lightbox-next{
+  position:absolute; background:rgba(255,255,255,.12); color:#fff; border:0; cursor:pointer;
+  width:44px; height:44px; border-radius:999px; display:grid; place-items:center; font-size:22px;
+  transition:background .2s;
+}
+.lightbox-close{ top:16px; right:16px; }
+.lightbox-prev{ left:16px; top:50%; transform:translateY(-50%); }
+.lightbox-next{ right:16px; top:50%; transform:translateY(-50%); }
+.lightbox-close:hover,.lightbox-prev:hover,.lightbox-next:hover{ background:rgba(255,255,255,.2); }
+.lightbox-cap{ position:absolute; left:0; right:0; bottom:16px; text-align:center; color:#ccc; margin:0 .75rem; }
+
+/* Dizalice topline – kartice prednosti */
+.feature-grid{
+  display:grid; gap:1rem; margin:2rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.feature-card{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:14px; padding:1rem 1.25rem;
+}
+.feature-card h3{ margin:.25rem 0 .5rem; font-size:1.05rem; }
+
 
